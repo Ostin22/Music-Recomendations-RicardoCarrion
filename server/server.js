@@ -3,11 +3,13 @@ let mongoose = require('mongoose');
 let cors = require('cors');
 let cancionesRoutes = require('./routes/cancionesRoutes');
 let app = express();
+app.use(express.static('../client'));
+
 let port = 3000;
 
 async function connectDB() {
     try{
-        await mongoose.connect('mongodb://localhost:27017/music', {useNewUrlParser: true, useUnifiedTopology: true});
+        await mongoose.connect('mongodb://127.0.0.1:27017/musica', {useNewUrlParser: true, useUnifiedTopology: true});
     }catch(err){
         console.error("Error en la conexión a BDD", err)
         process.exit(1);

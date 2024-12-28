@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navigation Menu */
+.menu {
+    background-color: #6200ea;
+    padding: 10px 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Song Input Container */
+#saveSongContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e3f2fd;
+}
+
+#saveSongContainer input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#saveSongContainer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveSongContainer button:hover {
+    background-color: #3700b3;
+}
+
+/* Random Song Generator */
+#randomSongGenerator {
+    text-align: center;
+    padding: 20px;
+}
+
+#randomSongGenerator button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #03dac6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#randomSongGenerator button:hover {
+    background-color: #018786;
+}
+
+#cancionRandom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Song List */
+#songlist {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#songList {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Añadido más espacio entre elementos */
+    list-style: none;
+    padding: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#songList li {
+    padding: 15px; /* Aumentado el padding para más espacio interno */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px; /* Añadido margen externo entre los elementos */
+}
+
+#songList li:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para enlaces */
+#songList a {
+    color: #6200ea;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#songList a:hover {
+    text-decoration: underline;
+}
+
+/* Botón votar */
+#songList button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #03dac6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#songList button:hover {
+    background-color: #018786;
+}
+
+/* Votos */
+#songList p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}

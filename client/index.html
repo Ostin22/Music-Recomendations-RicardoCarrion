@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="text" id="nombre" placeholder="Nombre de la cación">
-    <input type="text" id="artista" placeholder="Artista de la cación">
-    <input type="text" id="url" placeholder="URL video de la cación">
-    <button id="save" type="submit">Guardar canción</button>
+    <nav class="menu">
+        <ul>
+          <li><a href="#">Recomendaciones de Musica</a></li>
+        </ul>
+      </nav>
+
+    <div id="saveSongContainer">
+        <input type="text" id="nombre" placeholder="Nombre de la cación">
+        <input type="text" id="artista" placeholder="Artista de la cación">
+        <input type="text" id="url" placeholder="URL video de la cación">
+        <button id="save" type="submit">Guardar canción</button>
+    </div>
+
+    <div id="randomSongGenerator">
+        <button id="generateRandom" type="submit">Generar una cancion aleatoria</button>
+
+        <div id="cancionRandom"></div>
+    </div>
+
+    <div id="songlist">
+        <ul id="songList">
+            <!-- Aquí se llenarán las canciones -->
+        </ul>
+    </div>
+
+
+
+
+
 </body>
 </html>
