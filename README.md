@@ -12,7 +12,7 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 1. Clona el repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tuusuario/music-recommendation.git
+   git clone https://github.com/Ostin22/Music-Recomendations-RicardoCarrion.git
    ```
 
 2. Accede a la carpeta del proyecto:
